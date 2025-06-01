@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>TOEFL Mastery</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Навигация">
+      <div class="sidebar-header">
+        <div class="logo" id="sidebar-logo" style="cursor:pointer;">
+          <i class="fas fa-graduation-cap"></i><span>TOEFL Mastery</span>
+        </div>
+        <div class="user-profile" id="user-profile" style="cursor:pointer;">
+          <div class="avatar">
+            <img id="user-avatar" src="https://ui-avatars.com/api/?name=User&background=4e73df&color=fff" alt="Пользователь" />
+          </div>
+          <div class="user-info">
+            <span class="username" id="username">User</span>
+            <span class="user-status">Premium Member</span>
+          </div>
+        </div>
+      </div>
+      <nav class="sidebar-nav" aria-label="Меню">
+        <ul>
+          <li><a href="#" class="sidebar-link active" data-page="home"><i class="fas fa-home"></i><span>Главная</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="progress"><i class="fas fa-chart-line"></i><span>Прогресс</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="cards"><i class="fas fa-layer-group"></i><span>Карточки</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="quiz"><i class="fas fa-question-circle"></i><span>Тесты</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="review"><i class="fas fa-redo"></i><span>Повтор</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="plan"><i class="fas fa-calendar-alt"></i><span>План</span></a></li>
+          <li><a href="#" class="sidebar-link" data-page="settings"><i class="fas fa-cog"></i><span>Настройки</span></a></li>
+        </ul>
+      </nav>
+      <footer class="sidebar-footer">
+        <button class="upgrade-btn"><i class="fas fa-crown"></i>Upgrade to Pro</button>
+      </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+      <header class="main-header">
+        <div class="header-left">
+          <button class="menu-toggle" aria-label="Меню"><i class="fas fa-bars"></i></button>
+          <nav class="breadcrumbs" aria-label="Крошки"><span>Главная</span></nav>
+        </div>
+        <div class="header-right">
+          <form class="search-box" role="search">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Поиск..." aria-label="Поиск" />
+          </form>
+          <div class="header-icons">
+            <button class="icon-btn notification-btn" id="notification-btn" aria-label="Уведомления">
+              <i class="fas fa-bell"></i>
+            </button>
+            <button class="icon-btn" id="account-icon" aria-label="Аккаунт">
+              <img src="https://ui-avatars.com/api/?name=User&background=4e73df&color=fff" alt="Avatar" style="width:32px; height:32px; border-radius:50%;">
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="content-area">
+
+        <!-- Registration Page -->
+        <section id="registration-page" class="page hidden">
+          <div class="page-header">
+            <h1>Регистрация</h1>
+            <p>Пожалуйста, заполните форму для регистрации</p>
+          </div>
+          <form id="registration-form" class="auth-form">
+            <div class="form-group">
+              <label>Имя</label>
+              <input type="text" id="reg-name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="reg-email" placeholder="Ваш email" required>
+            </div>
+            <div class="form-group">
+              <label>Пароль</label>
+              <input type="password" id="reg-password" placeholder="Создайте пароль" required minlength="6">
+            </div>
+            <div class="form-group">
+              <label>Подтвердите пароль</label>
+              <input type="password" id="reg-confirm" placeholder="Повторите пароль" required minlength="6">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
+          </form>
+          <button class="btn btn-outline" id="to-login-btn" style="margin-top: 10px;">Перейти к авторизации</button>
+        </section>
+
+        <!-- Login Page -->
+        <section id="login-page" class="page hidden">
+          <div class="page-header">
+            <h1>Вход</h1>
+            <p>Пожалуйста, авторизуйтесь</p>
+          </div>
+          <form id="login-form-standalone" class="auth-form">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" id="login-email-standalone" placeholder="Ваш email" required>
+            </div>
+            <div class="form-group">
+              <label>Пароль</label>
+              <input type="password" id="login-password-standalone" placeholder="Ваш пароль" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Войти</button>
+          </form>
+          <button class="btn btn-outline" id="to-registration-btn" style="margin-top: 10px;">Перейти к регистрации</button>
+        </section>
+
+        <!-- Profile Page (Личный кабинет) -->
+        <section id="profile-page" class="page hidden">
+          <div class="page-header">
+            <h1>Личный кабинет</h1>
+          </div>
+          <div class="profile-info">
+            <div class="profile-avatar-block">
+              <img id="profile-avatar-img" src="https://ui-avatars.com/api/?name=User&background=4e73df&color=fff" alt="Аватар" style="width:80px;height:80px;border-radius:50%;">
+              <div>
+                <h2 id="profile-username">Имя</h2>
+                <div id="profile-email">email@example.com</div>
+              </div>
+            </div>
+            <button class="btn btn-outline profile-action-btn" id="logout-btn"><i class="fas fa-sign-out-alt"></i>Выйти</button>
+          </div>
+          <div class="profile-stats">
+            <div><b>Слов изучено:</b> <span id="profile-words-learned">0</span></div>
+            <div><b>Текущий стрик:</b> <span id="profile-streak">0</span></div>
+            <div><b>Баллы:</b> <span id="profile-points">0</span></div>
+          </div>
+          <div class="profile-settings-link" style="margin-top:24px;">
+            <button class="btn btn-primary" id="to-settings-btn"><i class="fas fa-cog"></i>Настройки аккаунта</button>
+          </div>
+        </section>
+
+        <!-- Home Page -->
+        <section id="home-page" class="page">
+          <header class="page-header gradient-bg">
+            <h1>Добро пожаловать в <span class="main-accent">TOEFL Mastery</span></h1>
+            <p>Комплексная подготовка к экзамену TOEFL</p>
+          </header>
+          <section class="stats-cards glass">
+            <div class="stat-card">
+              <div class="stat-icon stat-blue"><i class="fas fa-book-open"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="words-learned">0</span>
+                <span class="stat-label">Слов изучено</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon stat-green"><i class="fas fa-check-circle"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="success-rate">0%</span>
+                <span class="stat-label">Процент успеха</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon stat-orange"><i class="fas fa-fire"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="streak-days">0</span>
+                <span class="stat-label">Дней подряд</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon stat-purple"><i class="fas fa-star"></i></div>
+              <div class="stat-info">
+                <span class="stat-value" id="total-points">0</span>
+                <span class="stat-label">Всего баллов</span>
+              </div>
+            </div>
+          </section>
+          <section class="home-options glass">
+            <h2 class="section-title">Начните обучение</h2>
+            <div class="options-grid">
+              <div class="home-card card-fancy" data-page="cards">
+                <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Карточки</h3>
+                <p>Изучайте слова с интерактивными карточками</p>
+                <button class="card-action-btn">Начать</button>
+              </div>
+              <div class="home-card card-fancy" data-page="quiz">
+                <div class="card-icon"><i class="fas fa-question-circle"></i></div>
+                <h3>Тесты</h3>
+                <p>Практикуйтесь с реальными вопросами TOEFL</p>
+                <button class="card-action-btn">Начать</button>
+              </div>
+              <div class="home-card card-fancy" data-page="progress">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Прогресс</h3>
+                <p>Отслеживайте свои результаты и улучшения</p>
+                <button class="card-action-btn">Просмотр</button>
+              </div>
+              <div class="home-card card-fancy" data-page="plan">
+                <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+                <h3>План</h3>
+                <p>Персонализированный план подготовки</p>
+                <button class="card-action-btn">Создать</button>
+              </div>
+            </div>
+          </section>
+          <section class="recent-activity glass">
+            <h2 class="section-title">Последняя активность</h2>
+            <div class="activity-list" id="activity-list"></div>
+          </section>
+        </section>
+
+        <!-- Progress Page -->
+        <section id="progress-page" class="page hidden">
+          <div class="page-header">
+            <h1>Ваш прогресс</h1>
+            <p>Статистика и результаты обучения</p>
+          </div>
+          <div class="progress-container">
+            <div class="progress-main-stats">
+              <div class="progress-card">
+                <h3>Общий прогресс</h3>
+                <div class="circular-progress">
+                  <div class="circle-progress">
+                    <svg viewBox="0 0 100 100">
+                      <circle class="circle-bg" cx="50" cy="50" r="45"></circle>
+                      <circle class="circle-fill" cx="50" cy="50" r="45"></circle>
+                    </svg>
+                    <div class="circle-text">
+                      <span id="overall-progress">0%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="progress-details">
+                  <div class="detail-item">
+                    <span class="detail-label">Карточки:</span>
+                    <span class="detail-value" id="cards-progress">0/0</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Тесты:</span>
+                    <span class="detail-value" id="quiz-progress">0/0</span>
+                  </div>
+                  <div class="detail-item">
+                    <span class="detail-label">Баллы:</span>
+                    <span class="detail-value" id="total-points-progress">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="streak-card">
+                <h3>Текущая серия</h3>
+                <div class="streak-count">
+                  <i class="fas fa-fire"></i>
+                  <span id="current-streak">0 дней</span>
+                </div>
+                <p id="streak-message">Начните учиться сегодня, чтобы начать серию!</p>
+                <div class="streak-calendar" id="streak-calendar"></div>
+              </div>
+            </div>
+            <div class="progress-sections">
+              <div class="progress-section">
+                <h3>Рекомендации</h3>
+                <div class="recommendation-card">
+                  <div class="recommendation-icon"><i class="fas fa-lightbulb"></i></div>
+                  <div class="recommendation-content">
+                    <p id="recommendations">Начните изучение карточек или пройдите тест для получения рекомендаций</p>
+                    <button class="btn-outline">Начать практику</button>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-section">
+                <h3>История прогресса</h3>
+                <div class="progress-history">
+                  <canvas id="progress-chart"></canvas>
+                </div>
+                <div class="progress-timeline" id="progress-timeline"></div>
+              </div>
+            </div>
+            <div class="progress-actions">
+              <button class="btn" id="reset-progress"><i class="fas fa-undo"></i>Сбросить прогресс</button>
+              <button class="btn btn-primary"><i class="fas fa-share"></i>Поделиться результатами</button>
+              <button class="btn btn-outline"><i class="fas fa-download"></i>Экспорт данных</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="cards-section" class="hidden">
+          <div class="cards-header">
+            <h1>Карточки</h1>
+            <div class="cards-actions">
+              <div class="progress-indicator">
+                <span id="card-counter">0/0</span>
+                <div class="progress-bar">
+                  <div class="progress-fill" id="cards-progress-fill"></div>
+                </div>
+              </div>
+              <button class="btn-icon" id="cards-settings"><i class="fas fa-cog"></i></button>
+            </div>
+          </div>
+          <div class="flashcard-container">
+            <div class="flashcard" id="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <div class="flashcard-content">
+                    <p id="card-front">Загрузка...</p>
+                  </div>
+                  <div class="flashcard-actions">
+                    <button class="btn-icon" id="flip-card"><i class="fas fa-sync-alt"></i></button>
+                  </div>
+                </div>
+                <div class="flashcard-back">
+                  <div class="flashcard-content">
+                    <p id="card-translation">Загрузка...</p>
+                  </div>
+                  <div class="flashcard-actions">
+                    <button class="btn-icon" id="flip-card-back"><i class="fas fa-sync-alt"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flashcard-controls">
+              <button class="btn btn-outline" id="prev-card"><i class="fas fa-arrow-left"></i>Назад</button>
+              <div class="difficulty-buttons">
+                <button class="difficulty-btn easy"><i class="fas fa-smile"></i>Легко</button>
+                <button class="difficulty-btn medium"><i class="fas fa-meh"></i>Средне</button>
+                <button class="difficulty-btn hard"><i class="fas fa-frown"></i>Сложно</button>
+              </div>
+              <button class="btn btn-primary" id="next-card">Далее<i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="hidden">
+          <div class="quiz-header">
+            <h1>Тест TOEFL</h1>
+            <div class="quiz-tabs">
+              <button class="quiz-tab-btn active" data-tab="reading">Reading</button>
+              <button class="quiz-tab-btn" data-tab="listening">Listening</button>
+              <button class="quiz-tab-btn" data-tab="speaking">Speaking</button>
+              <button class="quiz-tab-btn" data-tab="writing">Writing</button>
+            </div>
+            <div class="quiz-info">
+              <span class="quiz-timer"><i class="fas fa-clock"></i><span id="quiz-timer">20:00</span></span>
+              <span class="quiz-progress" id="question-counter">Вопрос 0 из 0</span>
+            </div>
+          </div>
+          <div class="quiz-container">
+            <div class="quiz-progress-bar">
+              <div class="progress-fill" id="quiz-progress-fill"></div>
+            </div>
+            <div class="quiz-question" id="question-container">
+              <div class="question-text"><p>Загрузка вопросов...</p></div>
+              <div class="question-options" id="options-container"></div>
+            </div>
+            <div class="quiz-feedback" id="feedback"></div>
+            <div class="quiz-controls">
+              <button class="btn btn-outline" id="back-btn"><i class="fas fa-arrow-left"></i>Назад</button>
+              <button class="btn btn-primary" id="submit-btn">Ответить</button>
+              <button class="btn btn-primary hidden" id="next-btn">Далее<i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Review Section -->
+        <section id="review-page" class="page hidden">
+          <div class="page-header">
+            <h1>Повторение</h1>
+            <p>Повторите сложные слова и вопросы</p>
+          </div>
+          <div class="review-tabs">
+            <button class="review-tab-btn active" data-tab="difficult">Сложные слова</button>
+            <button class="review-tab-btn" data-tab="mistakes">Ошибки в тестах</button>
+            <button class="review-tab-btn" data-tab="bookmarks">Закладки</button>
+          </div>
+          <div class="review-content">
+            <div class="review-tab-content active" id="difficult-tab">
+              <div class="difficult-words-list" id="difficult-words-list"></div>
+            </div>
+            <div class="review-tab-content" id="mistakes-tab">
+              <div class="mistakes-list" id="mistakes-list"></div>
+            </div>
+            <div class="review-tab-content" id="bookmarks-tab">
+              <div class="bookmarks-list" id="bookmarks-list"></div>
+            </div>
+          </div>
+          <div class="review-actions">
+            <button class="btn btn-primary" id="practice-difficult">Практиковать сложные слова</button>
+            <button class="btn btn-outline" id="clear-mistakes">Очистить историю ошибок</button>
+          </div>
+        </section>
+
+        <!-- Plan Section -->
+        <section id="plan-page" class="page hidden">
+          <div class="page-header">
+            <h1>План обучения</h1>
+            <p>Персонализированный план подготовки</p>
+          </div>
+          <div class="plan-container">
+            <div class="plan-card">
+              <h3>Мой план</h3>
+              <div class="plan-details" id="plan-details">
+                <p>Создайте свой персональный план подготовки:</p>
+                <div class="form-group">
+                  <label>Целевая дата экзамена:</label>
+                  <input type="date" id="exam-date">
+                </div>
+                <div class="form-group">
+                  <label>Текущий уровень:</label>
+                  <select id="current-level">
+                    <option value="beginner">Начинающий</option>
+                    <option value="intermediate" selected>Средний</option>
+                    <option value="advanced">Продвинутый</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Целевой балл:</label>
+                  <select id="target-score">
+                    <option value="60">60-80</option>
+                    <option value="80" selected>80-100</option>
+                    <option value="100">100-120</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Часов в неделю:</label>
+                  <select id="study-hours">
+                    <option value="5">5 часов</option>
+                    <option value="10" selected>10 часов</option>
+                    <option value="15">15 часов</option>
+                    <option value="20">20 часов</option>
+                  </select>
+                </div>
+                <button class="btn btn-primary" id="generate-plan">Создать план</button>
+              </div>
+              <div class="plan-schedule hidden" id="plan-schedule">
+                <h4>Ваш график обучения</h4>
+                <div class="plan-summary">
+                  <div class="plan-summary-item">
+                    <span class="plan-summary-label">До экзамена:</span>
+                    <span class="plan-summary-value" id="days-until-exam">0 дней</span>
+                  </div>
+                  <div class="plan-summary-item">
+                    <span class="plan-summary-label">Всего часов:</span>
+                    <span class="plan-summary-value" id="total-study-hours">0 часов</span>
+                  </div>
+                  <div class="plan-summary-item">
+                    <span class="plan-summary-label">Рекомендации:</span>
+                    <span class="plan-summary-value" id="study-recommendations"></span>
+                  </div>
+                </div>
+                <div class="schedule-days" id="schedule-days"></div>
+                <div class="plan-resources">
+                  <h4>Рекомендуемые ресурсы</h4>
+                  <ul class="resources-list" id="resources-list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-page" class="page hidden">
+          <div class="page-header">
+            <h1>Настройки</h1>
+            <p>Настройте приложение под себя</p>
+          </div>
+          <div class="settings-container">
+            <div class="settings-card">
+              <h3>Профиль</h3>
+              <div class="form-group">
+                <label>Имя пользователя:</label>
+                <input type="text" id="username-input" placeholder="Введите имя">
+              </div>
+              <div class="form-group">
+                <label>Email:</label>
+                <input type="email" id="email-input" placeholder="Введите email">
+              </div>
+              <div class="form-group">
+                <label>Аватар:</label>
+                <div class="avatar-options">
+                  <div class="avatar-option selected">
+                    <img src="https://ui-avatars.com/api/?name=User&background=4e73df&color=fff" alt="Avatar 1">
+                  </div>
+                  <div class="avatar-option">
+                    <img src="https://ui-avatars.com/api/?name=User&background=1cc88a&color=fff" alt="Avatar 2">
+                  </div>
+                  <div class="avatar-option">
+                    <img src="https://ui-avatars.com/api/?name=User&background=f6c23e&color=fff" alt="Avatar 3">
+                  </div>
+                  <div class="avatar-option">
+                    <img src="https://ui-avatars.com/api/?name=User&background=e74a3b&color=fff" alt="Avatar 4">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="settings-card">
+              <h3>Выученные слова</h3>
+              <div id="learned-words-list"></div>
+            </div>
+            <div class="settings-card">
+              <h3>Общие настройки</h3>
+              <div class="form-group">
+                <label>Язык интерфейса:</label>
+                <select id="language">
+                  <option value="ru" selected>Русский</option>
+                  <option value="en">English</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Тема:</label>
+                <select id="theme">
+                  <option value="light" selected>Светлая</option>
+                  <option value="dark">Темная</option>
+                  <option value="system">Как в системе</option>
+                </select>
+              </div>
+            </div>
+            <div class="settings-card">
+              <h3>Уведомления</h3>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="daily-reminder" checked>
+                  Ежедневные напоминания
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="progress-notifications" checked>
+                  Уведомления о прогрессе
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="streak-notifications" checked>
+                  Уведомления о серии
+                </label>
+              </div>
+              <div class="form-group">
+                <label>
+                  <input type="checkbox" id="study-tips" checked>
+                  Советы по обучению
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="save-settings">Сохранить настройки</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

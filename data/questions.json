@@ -1,0 +1,442 @@
+[
+  {
+    "question": "What was the primary transformation brought about by the Industrial Revolution?",
+    "options": [
+      "From agricultural to industrial economies",
+      "From democratic to monarchical systems",
+      "From urban to rural living",
+      "From trade-based to self-sufficient economies"
+    ],
+    "correct": 0,
+    "explanation": "The Industrial Revolution transformed economies from agriculture-based to industry-based."
+  },
+  {
+    "question": "What is the byproduct of photosynthesis that is essential for most life forms?",
+    "options": [
+      "Carbon dioxide",
+      "Glucose",
+      "Oxygen",
+      "Nitrogen"
+    ],
+    "correct": 2,
+    "explanation": "Photosynthesis releases oxygen as a byproduct, which is essential for most life forms."
+  },
+  {
+    "question": "Why was the Great Pyramid of Giza originally constructed?",
+    "options": [
+      "As a temple for religious ceremonies",
+      "As an astronomical observatory",
+      "As a tomb for the Pharaoh Khufu",
+      "As a monument to celebrate military victories"
+    ],
+    "correct": 2,
+    "explanation": "It was constructed as a tomb for the Pharaoh Khufu."
+  },
+  {
+    "question": "How did Athenian democracy differ from modern democracies?",
+    "options": [
+      "It excluded women and slaves",
+      "It was direct rather than representative",
+      "It had term limits for officials",
+      "It included a system of checks and balances"
+    ],
+    "correct": 1,
+    "explanation": "Athenian democracy was direct, with citizens voting on legislation themselves."
+  },
+  {
+    "question": "According to plate tectonics theory, what causes earthquakes?",
+    "options": [
+      "Changes in atmospheric pressure",
+      "Movement of Earth's outer shell plates",
+      "Shifts in Earth's magnetic field",
+      "Erosion of continental shelves"
+    ],
+    "correct": 1,
+    "explanation": "Movement of plates causes earthquakes, volcanic activity, and mountain formation."
+  },
+  {
+    "question": "What was a key characteristic of the Renaissance?",
+    "options": [
+      "Decline of urban centers",
+      "Revival of classical learning",
+      "Increased religious orthodoxy",
+      "Development of feudal systems"
+    ],
+    "correct": 1,
+    "explanation": "The Renaissance was characterized by a revival of classical learning and wisdom."
+  },
+  {
+    "question": "What is the first step in the water cycle?",
+    "options": [
+      "Condensation",
+      "Precipitation",
+      "Evaporation",
+      "Collection"
+    ],
+    "correct": 2,
+    "explanation": "The water cycle begins with water evaporating from the Earth's surface."
+  },
+  {
+    "question": "Which of these is a common theme in Shakespeare's tragedies?",
+    "options": [
+      "Human suffering",
+      "Political satire",
+      "Pastoral romance",
+      "Scientific discovery"
+    ],
+    "correct": 0,
+    "explanation": "Shakespeare's tragedies often explore themes of human suffering and moral failure."
+  },
+  {
+    "question": "What was the primary function of the Silk Road?",
+    "options": [
+      "Military conquest",
+      "Religious pilgrimage",
+      "Trade and cultural exchange",
+      "Scientific exploration"
+    ],
+    "correct": 2,
+    "explanation": "The Silk Road was an ancient network of trade routes for trade and cultural exchange."
+  },
+  {
+    "question": "What connects the two hemispheres of the brain?",
+    "options": [
+      "Cerebral cortex",
+      "Corpus callosum",
+      "Brain stem",
+      "Frontal lobe"
+    ],
+    "correct": 1,
+    "explanation": "The two hemispheres are connected by the corpus callosum."
+  },
+  {
+    "question": "What happens to the pitch of sound when the source moves away from the listener?",
+    "options": [
+      "It becomes higher",
+      "It becomes lower",
+      "It remains the same",
+      "It becomes inaudible"
+    ],
+    "correct": 1,
+    "explanation": "When a sound source moves away, the pitch appears lower as the waves are stretched."
+  },
+  {
+    "question": "How many cells result from meiosis and how do they differ from the parent cell?",
+    "options": [
+      "Two identical cells",
+      "Two genetically different cells",
+      "Four identical cells",
+      "Four genetically different cells"
+    ],
+    "correct": 3,
+    "explanation": "Meiosis produces four genetically different cells with half the chromosomes."
+  },
+  {
+    "question": "What was a characteristic technique of Impressionist painters?",
+    "options": [
+      "Large, bold brush strokes",
+      "Small, thin brush strokes",
+      "Exclusively studio painting",
+      "Focus on mythological themes"
+    ],
+    "correct": 1,
+    "explanation": "Impressionism was characterized by small, thin brush strokes."
+  },
+  {
+    "question": "What does opportunity cost represent in economics?",
+    "options": [
+      "The actual cost of a product",
+      "The potential benefit of the next best alternative",
+      "The total cost of production",
+      "The monetary value of time"
+    ],
+    "correct": 1,
+    "explanation": "Opportunity cost refers to the potential benefit an individual misses out on when choosing one alternative over another."
+  },
+  {
+    "question": "Which sentence is in passive voice?",
+    "options": [
+      "The team won the championship",
+      "The book was read by the student",
+      "She writes novels",
+      "They are building a house"
+    ],
+    "correct": 1,
+    "explanation": "Passive voice structure: 'was [verb] by' (the subject receives the action)."
+  },
+  {
+    "question": "What are you asked to describe in this speaking task about childhood?",
+    "options": [
+      "A current news event",
+      "A memorable childhood event",
+      "Your future career plans",
+      "A book you recently read"
+    ],
+    "correct": 1,
+    "explanation": "The task asks to describe a memorable event from your childhood."
+  },
+  {
+    "question": "What is the main purpose of a speaking task about living preferences?",
+    "options": [
+      "To describe urban planning",
+      "To express a personal preference with reasons",
+      "To compare economic systems",
+      "To analyze population statistics"
+    ],
+    "correct": 1,
+    "explanation": "The task asks for personal preference ('which do you prefer') with reasons."
+  },
+  {
+    "question": "What are you asked to do in an integrated speaking task about opinions?",
+    "options": [
+      "Express your own opinion",
+      "Summarize someone's opinion and reasons",
+      "Compare two different proposals",
+      "Evaluate a decision"
+    ],
+    "correct": 1,
+    "explanation": "The task asks to state an opinion and explain the reasons given."
+  },
+  {
+    "question": "What is the focus of an academic speaking task about birds?",
+    "options": [
+      "General bird behavior",
+      "Adaptation of beaks to diets",
+      "Evolution of flight",
+      "Bird migration patterns"
+    ],
+    "correct": 1,
+    "explanation": "The task focuses on how birds' beaks are adapted to their specific diets."
+  },
+  {
+    "question": "What are the three parts of a problem-solving speaking task?",
+    "options": [
+      "Problem, solutions, preference",
+      "Cause, effect, solution",
+      "History, current state, future",
+      "Theory, evidence, conclusion"
+    ],
+    "correct": 0,
+    "explanation": "The task asks to describe: 1) the problem, 2) two solutions, and 3) which is better."
+  },
+  {
+    "question": "What type of essay asks you to agree or disagree with a statement?",
+    "options": [
+      "Narrative",
+      "Argumentative",
+      "Descriptive",
+      "Compare-and-contrast"
+    ],
+    "correct": 1,
+    "explanation": "An argumentative essay requires taking a position (agree/disagree) on a statement."
+  },
+  {
+    "question": "What is the main task in an integrated writing question?",
+    "options": [
+      "Summarize only the lecture",
+      "Compare the lecture and reading",
+      "Explain how the lecture challenges the reading",
+      "Provide personal opinion on both"
+    ],
+    "correct": 2,
+    "explanation": "The task asks to explain how the lecture challenges the reading."
+  },
+  {
+    "question": "What must your essay include to effectively respond to a prompt about class attendance?",
+    "options": [
+      "A comparison of different universities",
+      "Your personal opinion with supporting reasons",
+      "A historical overview of education",
+      "Statistics about class attendance"
+    ],
+    "correct": 1,
+    "explanation": "The prompt asks 'which point of view do you agree with', requiring your opinion with support."
+  },
+  {
+    "question": "What three elements should an essay about working students include?",
+    "options": [
+      "History, current state, future",
+      "Advantages, disadvantages, opinion",
+      "Problems, solutions, evaluation",
+      "Causes, effects, examples"
+    ],
+    "correct": 1,
+    "explanation": "The prompt asks to discuss advantages, disadvantages, and give your opinion."
+  },
+  {
+    "question": "What is the relationship between lecture and reading in a writing task?",
+    "options": [
+      "The lecture supports the reading",
+      "The lecture provides examples for the reading",
+      "The lecture challenges the reading",
+      "The lecture is unrelated to the reading"
+    ],
+    "correct": 2,
+    "explanation": "The lecture presents evidence that challenges the theories in the reading."
+  },
+  {
+    "question": "Which of the following is NOT a characteristic of academic writing?",
+    "options": [
+      "Formal tone",
+      "Personal opinions without evidence",
+      "Clear structure",
+      "Precise vocabulary"
+    ],
+    "correct": 1,
+    "explanation": "Academic writing requires evidence-based arguments, not unsupported personal opinions."
+  },
+  {
+    "question": "What is the main purpose of a thesis statement in an essay?",
+    "options": [
+      "To provide background information",
+      "To present the main argument or claim",
+      "To list all references",
+      "To summarize the conclusion"
+    ],
+    "correct": 1,
+    "explanation": "The thesis statement presents the main argument or claim of the essay."
+  },
+  {
+    "question": "Which of these is an example of a compound sentence?",
+    "options": [
+      "She studied hard for the exam.",
+      "She studied hard, and she passed the exam.",
+      "Studying hard for the exam.",
+      "Because she studied hard, she passed the exam."
+    ],
+    "correct": 1,
+    "explanation": "A compound sentence contains two independent clauses joined by a coordinating conjunction."
+  },
+  {
+    "question": "What is the main purpose of a topic sentence in a paragraph?",
+    "options": [
+      "To provide a conclusion",
+      "To introduce the main idea",
+      "To list supporting details",
+      "To ask a question"
+    ],
+    "correct": 1,
+    "explanation": "Topic sentence introduces the main idea of the paragraph."
+  },
+  {
+    "question": "Which of these is an example of a complex sentence?",
+    "options": [
+      "I studied for the exam.",
+      "I studied hard, so I passed the exam.",
+      "Although I studied hard, I failed the exam.",
+      "Study hard and pass the exam."
+    ],
+    "correct": 2,
+    "explanation": "A complex sentence contains one independent clause and at least one dependent clause."
+  },
+  {
+    "question": "What is the main idea of the paragraph you just heard in the listening section?",
+    "options": [
+      "The history of urban development",
+      "The benefits of renewable energy",
+      "The impact of technology on education",
+      "The importance of biodiversity"
+    ],
+    "correct": 2,
+    "explanation": "The paragraph discussed how technology has transformed education methods."
+  },
+  {
+    "question": "What does the professor imply about the theory discussed in the lecture?",
+    "options": [
+      "It is widely accepted without criticism",
+      "It has some limitations but is generally useful",
+      "It has been completely disproven by recent research",
+      "It is only applicable in certain rare cases"
+    ],
+    "correct": 1,
+    "explanation": "The professor mentioned limitations but emphasized the theory's practical applications."
+  },
+  {
+    "question": "How does the woman's opinion differ from the man's in the conversation?",
+    "options": [
+      "She believes the assignment is too difficult",
+      "She thinks they should ask for an extension",
+      "She disagrees with his approach to the research",
+      "She prefers to work alone rather than in a group"
+    ],
+    "correct": 2,
+    "explanation": "The woman suggested a different research methodology than the man proposed."
+  },
+  {
+    "question": "What is the speaker's main purpose in this part of the lecture?",
+    "options": [
+      "To introduce a new concept",
+      "To summarize previous points",
+      "To provide contrasting examples",
+      "To criticize a common misconception"
+    ],
+    "correct": 0,
+    "explanation": "The speaker began by saying 'Now let's consider a different approach...' indicating a new topic."
+  },
+  {
+    "question": "What can be inferred about the student from her response to the professor's question?",
+    "options": [
+      "She didn't complete the required reading",
+      "She misunderstood the main concept",
+      "She has thought deeply about the topic",
+      "She is nervous about speaking in class"
+    ],
+    "correct": 2,
+    "explanation": "Her detailed answer demonstrated thorough consideration of the subject matter."
+  },
+  {
+    "question": "What organizational pattern does the lecture follow?",
+    "options": [
+      "Chronological order",
+      "Problem-solution structure",
+      "Compare-and-contrast approach",
+      "Cause-and-effect analysis"
+    ],
+    "correct": 1,
+    "explanation": "The lecturer first presented issues and then discussed potential solutions."
+  },
+  {
+    "question": "Why does the speaker mention the 19th century industrial revolution?",
+    "options": [
+      "As an example of rapid technological change",
+      "To contrast with current economic conditions",
+      "To introduce a historical timeline",
+      "As a cautionary tale about industrialization"
+    ],
+    "correct": 0,
+    "explanation": "The reference was made to draw parallels with today's technological advancements."
+  },
+  {
+    "question": "What aspect of the topic does the professor say will be covered in the next lecture?",
+    "options": [
+      "International variations",
+      "Historical precedents",
+      "Statistical analysis",
+      "Future implications"
+    ],
+    "correct": 3,
+    "explanation": "The professor concluded by saying 'Next time we'll examine what this might mean for future developments.'"
+  },
+  {
+    "question": "What does the professor suggest students should pay particular attention to?",
+    "options": [
+      "The definitions of key terms",
+      "The diagrams in the textbook",
+      "The sample test questions",
+      "The dates of important events"
+    ],
+    "correct": 0,
+    "explanation": "She emphasized that 'understanding these terms precisely is crucial for the exam.'"
+  },
+  {
+    "question": "What is the relationship between the two concepts discussed in the lecture?",
+    "options": [
+      "They are opposing theories",
+      "One supports the other",
+      "They are unrelated phenomena",
+      "They are different names for the same thing"
+    ],
+    "correct": 1,
+    "explanation": "The professor explained how the first concept provides evidence for the second."
+  }
+]
